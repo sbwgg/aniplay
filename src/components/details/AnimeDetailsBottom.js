@@ -78,12 +78,12 @@ function AnimeDetailsBottom({ data }) {
                                     </button>
                                 )}
                             </div>
-                        </div>
-                                <div>
-       
+                                    <div className=" w-full flex flex-col lg:flex-row lg:max-w-[98%] mx-auto xl:max-w-[94%] lg:gap-[6px]">
+        <div className="flex-grow w-full h-full">
             <NextAiringDate nextAiringEpisode={data.nextAiringEpisode} />
-          }
         </div>
+                        </div>
+                   
                     </div>
                 );
             }
