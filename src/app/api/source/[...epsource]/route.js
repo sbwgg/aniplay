@@ -5,7 +5,7 @@ import { NextResponse, NextRequest } from "next/server"
 async function consumetEpisode(id) {
     try {
       const { data } = await axios.get(
-        `https://consumet-anime-api.vercel.app/meta/anilist/watch/${id}`
+        `https://api.bertoo.pro/meta/anilist/watch/${id}`
       );
       return data;
     } catch (error) {
