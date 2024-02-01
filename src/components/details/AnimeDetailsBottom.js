@@ -14,6 +14,8 @@ function AnimeDetailsBottom({ data }) {
         setShowFullDescription(!showFullDescription);
     };
 
+    const data = await AnimeInfoAnilist(id);
+
     const tabs = [
         {
             name: 'Overview',
