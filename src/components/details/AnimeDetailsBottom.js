@@ -5,6 +5,7 @@ import styles from '../../styles/AnimeDetailsBottom.module.css'
 import Animecards from '../CardComponent/Animecards';
 import { AnimatePresence, Variants, motion } from 'framer-motion'
 import Characters from './Characters';
+import NextAiringDate from "@/components/videoplayer/NextAiringDate";
 
 function AnimeDetailsBottom({ data }) {
     const [showFullDescription, setShowFullDescription] = useState(false);
@@ -76,6 +77,13 @@ function AnimeDetailsBottom({ data }) {
                                 )}
                             </div>
                         </div>
+                                <div className=" w-full flex flex-col lg:flex-row lg:max-w-[98%] mx-auto xl:max-w-[94%] lg:gap-[6px]">
+        <div className="flex-grow w-full h-full">
+          <PlayerComponent id={id} epid={epid} provider={provider} epnum={epnum} data={data} subdub={subdub} />
+          {data?.status === 'RELEASING' &&
+            <NextAiringDate nextAiringEpisode={data.nextAiringEpisode} />
+          }
+        </div>
                     </div>
                 );
             }
