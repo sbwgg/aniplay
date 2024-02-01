@@ -5,7 +5,7 @@ import styles from '../../styles/AnimeDetailsBottom.module.css'
 import Animecards from '../CardComponent/Animecards';
 import { AnimatePresence, Variants, motion } from 'framer-motion'
 import Characters from './Characters';
-import NextAiringDate from "@/components/videoplayer/NextAiringDate";
+
 
 function AnimeDetailsBottom({ data }) {
     const [showFullDescription, setShowFullDescription] = useState(false);
@@ -14,7 +14,7 @@ function AnimeDetailsBottom({ data }) {
         setShowFullDescription(!showFullDescription);
     };
 
-    const data = await AnimeInfoAnilist(id);
+
 
     const tabs = [
         {
@@ -78,10 +78,6 @@ function AnimeDetailsBottom({ data }) {
                                     </button>
                                 )}
                             </div>
-                                    <div className=" w-full flex flex-col lg:flex-row lg:max-w-[98%] mx-auto xl:max-w-[94%] lg:gap-[6px]">
-        <div className="flex-grow w-full h-full">
-            <NextAiringDate nextAiringEpisode={data.nextAiringEpisode} />
-        </div>
                         </div>
                    
                     </div>
