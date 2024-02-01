@@ -11,12 +11,12 @@ import Script from "next/script";
 const inter = Inter({ subsets: ['latin'] })
 const myfont = localFont({ src: "../static-fonts/28 Days Later.ttf" })
 
-const APP_NAME = "Aniplay";
-const APP_DEFAULT_TITLE = "Aniplay - Watch Anime Online";
-const APP_DESCRIPTION = "Explore a vast collection of anime on Aniplay, your go-to destination for streaming the latest and classic anime series. Immerse yourself in captivating storylines, vibrant animation, and diverse genres. Discover a world of entertainment at your fingertips with Aniplay, where every episode is an adventure.";
+const APP_NAME = "Bertoo";
+const APP_DEFAULT_TITLE = "Bertoo.pro - Watch Anime Online";
+const APP_DESCRIPTION = "Explore a vast collection of anime on Bertoo.pro, your go-to destination for streaming the latest and classic anime series. Immerse yourself in captivating storylines, vibrant animation, and diverse genres. Discover a world of entertainment at your fingertips with Bertoo.pro, where every episode is an adventure.";
 
 export const metadata = {
-  metadataBase: new URL('https://aniplay-next.vercel.app'),
+  metadataBase: new URL('https://bertoo.pro'),
   applicationName: APP_NAME,
   title: APP_DEFAULT_TITLE,
   description: APP_DESCRIPTION,
@@ -42,7 +42,7 @@ export const metadata = {
     'latest dubbed anime',
     'subbed anime streaming',
     'dubbed anime streaming',
-    'aniplay latest anime',
+    'Bertoo.pro latest anime',
   ],
   manifest: "/manifest.json",
   appleWebApp: {
