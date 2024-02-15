@@ -2,8 +2,8 @@ export const checkEnvironment = () => {
     let base_url =
       process.env.NODE_ENV === "development"
         ? "http://localhost:3000"
-        // ? 'https://aniplaynow.live'
-        : "https://aniplaynow.live";
+        // ? 'https://bertoo.pro'
+        : "https://bertoo.pro";
   
     return base_url;
   };
