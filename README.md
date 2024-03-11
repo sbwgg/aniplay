@@ -42,7 +42,7 @@ Enjoy ad-free streaming and seamless progress tracking with AniList integration,
 - [ ] Add Scene Search in catalog page
 - [X] Add Anilist episode tracking
 - [ ] Complete Watch Page
-- [ ] Add Profile page.
+- [X] Add Profile page.
 - [ ] Add Manga Reading Support
     - [ ] Comick
     - [ ] Mangadex
@@ -136,6 +136,9 @@ services:
       - <path_of_env_file>/.env:/home/node/app/.env
     image: ghcr.io/luckyhv/aniplay:latest
 ```
+
+For at full stack deploy (db, redis, consumet api)
+See [docker-compose.yml](https://github.com/Luckyhv/aniplay/blob/master/docker-compose.yml)
 
 Access Aniplay at ``http://localhost:3000``
 
